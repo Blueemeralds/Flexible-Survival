@@ -1200,94 +1200,99 @@ to say MoreauBuySuccessful:
 	now LastMoreauPartSale is turns;
 
 An everyturn rule:
-	if "Body Shop Guarantee - Face" is listed in feats of Player and BodyShopGuaranteedFace is not personally excluded:
-		if (FaceName of Player is "Jackalman" or FaceName of Player is "Jackalboy" or FaceName of Player is "Nightmare" or FaceName of Player is "Hellhound"):
-			say "     You can feel the magic that Moreau used to guarantee the new face you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
-			FeatLoss "Body Shop Guarantee - Face";
-		else if "Singular" is listed in feats of Player and FaceName of Player is not "Human" and FaceName of Player is not BodyName of Player:
-			say "     You can feel the magic that Moreau used to guarantee the new face you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your face, only to be counteracted at every turn. You fall to your knees and cradle your head in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
-			FeatLoss "Body Shop Guarantee - Face";
-		else if FaceName of Player is not BodyShopGuaranteedFace:
-			say "     You can feel the magic that Moreau used to guarantee the new face you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your head to confirm to the set shape once more.";
-			setmonster BodyShopGuaranteedFace;
-			choose row MonsterID from the Table of Random Critters;
-			say "     Your face [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [face change entry].";
-			now FaceName of Player is Name entry;
-			if Species Name entry is not "":
-				now FaceSpeciesName of Player is Species Name entry;
-			else:
-				now FaceSpeciesName of Player is Name entry;
-			now Face of Player is face entry;
-	if "Body Shop Guarantee - Body" is listed in feats of Player and BodyShopGuaranteedBody is not personally excluded:
-		if (BodyName of Player is "Jackalman" or BodyName of Player is "Jackalboy" or BodyName of Player is "Nightmare" or BodyName of Player is "Hellhound"):
-			say "     You can feel the magic that Moreau used to guarantee the new body you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
-			FeatLoss "Body Shop Guarantee - Body";
-		else if BodyName of Player is not BodyShopGuaranteedBody:
-			say "     You can feel the magic that Moreau used to guarantee the new body you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your body to confirm to the set shape once more.";
-			setmonster BodyShopGuaranteedBody;
-			choose row MonsterID from the Table of Random Critters;
-			say "     Your body [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [body change entry].";
-			now BodyName of Player is Name entry;
-			if Species Name entry is not "":
-				now BodySpeciesName of Player is Species Name entry;
-			else:
-				now BodySpeciesName of Player is Name entry;
-			now Body of Player is body entry;
-			attributeinfect; [sets the new attributes]
-	if "Body Shop Guarantee - Skin" is listed in feats of Player and BodyShopGuaranteedSkin is not personally excluded:
-		if (SkinName of Player is "Jackalman" or SkinName of Player is "Jackalboy" or SkinName of Player is "Nightmare" or SkinName of Player is "Hellhound"):
-			say "     You can feel the magic that Moreau used to guarantee the new skin you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
-			FeatLoss "Body Shop Guarantee - Skin";
-		else if "Singular" is listed in feats of Player and FaceName of Player is not "Human" and SkinName of Player is not BodyName of Player:
-			say "     You can feel the magic that Moreau used to guarantee the new skin you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your skin in rippling waves, only to be counteracted at every turn. You fall to your knees and cradle your body in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
-			FeatLoss "Body Shop Guarantee - Skin";
-		else if SkinName of Player is not BodyShopGuaranteedSkin:
-			say "     You can feel the magic that Moreau used to guarantee the new skin you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your skin to confirm to the set shape once more.";
-			setmonster BodyShopGuaranteedSkin;
-			choose row MonsterID from the Table of Random Critters;
-			say "     Your skin [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [skin change entry].";
-			now SkinName of Player is Name entry;
-			if Species Name entry is not "":
-				now SkinSpeciesName of Player is Species Name entry;
-			else:
-				now SkinSpeciesName of Player is Name entry;
-			now Skin of Player is skin entry;
-	if "Body Shop Guarantee - Tail" is listed in feats of Player and BodyShopGuaranteedtail is not personally excluded:
-		if (TailName of Player is "Jackalman" or TailName of Player is "Jackalboy" or TailName of Player is "Nightmare" or TailName of Player is "Hellhound"):
-			say "     You can feel the magic that Moreau used to guarantee the new tail you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
-			FeatLoss "Body Shop Guarantee - Tail";
-		else if "Singular" is listed in feats of Player and TailName of Player is not "Human" and TailName of Player is not BodyName of Player:
-			say "     You can feel the magic that Moreau used to guarantee the new tail you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your tail, only to be counteracted at every turn. You fall to your knees and cradle the tail in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
-			FeatLoss "Body Shop Guarantee - Tail";
-		else if TailName of Player is not BodyShopGuaranteedtail:
-			say "     You can feel the magic that Moreau used to guarantee the new tail you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your tail to confirm to the set shape once more.";
-			setmonster BodyShopGuaranteedtail;
-			choose row MonsterID from the Table of Random Critters;
-			say "     Your tail [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [ass change entry].";
-			now TailName of Player is Name entry;
-			if Species Name entry is not "":
-				now TailSpeciesName of Player is Species Name entry;
-			else:
-				now TailSpeciesName of Player is Name entry;
-			now tail of Player is tail entry;
-	if "Body Shop Guarantee - Crotch" is listed in feats of Player and BodyShopGuaranteedCrotch is not personally excluded:
-		if (CockName of Player is "Jackalman" or CockName of Player is "Jackalboy" or CockName of Player is "Nightmare" or CockName of Player is "Hellhound"):
-			say "     You can feel the magic that Moreau used to guarantee the new crotch you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
-			FeatLoss "Body Shop Guarantee - Crotch";
-		else if "Singular" is listed in feats of Player and CockName of Player is not "Human" and CockName of Player is not BodyName of Player:
-			say "     You can feel the magic that Moreau used to guarantee the new crotch you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your crotch, only to be counteracted at every turn. You fall to your knees and flinch in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
-			FeatLoss "Body Shop Guarantee - Crotch";
-		else if CockName of Player is not BodyShopGuaranteedCrotch:
-			say "     You can feel the magic that Moreau used to guarantee the new crotch you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your cock to confirm to the set shape once more.";
-			setmonster BodyShopGuaranteedCrotch;
-			choose row MonsterID from the Table of Random Critters;
-			say "     Your crotch [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [cock change entry].";
-			now CockName of Player is Name entry;
-			if Species Name entry is not "":
-				now CockSpeciesName of Player is Species Name entry;
-			else:
-				now CockSpeciesName of Player is Name entry;
-			now Cock of Player is cock entry;
+	if "Body Shop Guarantee - Face" is listed in feats of Player:
+		unless BodyShopGuaranteedFace is personally excluded:
+			if (FaceName of Player is "Jackalman" or FaceName of Player is "Jackalboy" or FaceName of Player is "Nightmare" or FaceName of Player is "Hellhound"):
+				say "     You can feel the magic that Moreau used to guarantee the new face you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
+				FeatLoss "Body Shop Guarantee - Face";
+			else if "Singular" is listed in feats of Player and FaceName of Player is not "Human" and FaceName of Player is not BodyName of Player:
+				say "     You can feel the magic that Moreau used to guarantee the new face you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your face, only to be counteracted at every turn. You fall to your knees and cradle your head in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
+				FeatLoss "Body Shop Guarantee - Face";
+			else if FaceName of Player is not BodyShopGuaranteedFace:
+				say "     You can feel the magic that Moreau used to guarantee the new face you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your head to confirm to the set shape once more.";
+				setmonster BodyShopGuaranteedFace;
+				choose row MonsterID from the Table of Random Critters;
+				say "     Your face [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [face change entry].";
+				now FaceName of Player is Name entry;
+				if Species Name entry is not "":
+					now FaceSpeciesName of Player is Species Name entry;
+				else:
+					now FaceSpeciesName of Player is Name entry;
+				now Face of Player is face entry;
+	if "Body Shop Guarantee - Body" is listed in feats of Player:
+		unless BodyShopGuaranteedBody is personally excluded:
+			if (BodyName of Player is "Jackalman" or BodyName of Player is "Jackalboy" or BodyName of Player is "Nightmare" or BodyName of Player is "Hellhound"):
+				say "     You can feel the magic that Moreau used to guarantee the new body you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
+				FeatLoss "Body Shop Guarantee - Body";
+			else if BodyName of Player is not BodyShopGuaranteedBody:
+				say "     You can feel the magic that Moreau used to guarantee the new body you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your body to confirm to the set shape once more.";
+				setmonster BodyShopGuaranteedBody;
+				choose row MonsterID from the Table of Random Critters;
+				say "     Your body [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [body change entry].";
+				now BodyName of Player is Name entry;
+				if Species Name entry is not "":
+					now BodySpeciesName of Player is Species Name entry;
+				else:
+					now BodySpeciesName of Player is Name entry;
+				now Body of Player is body entry;
+				attributeinfect; [sets the new attributes]
+	if "Body Shop Guarantee - Skin" is listed in feats of Player:
+		unless BodyShopGuaranteedSkin is personally excluded:
+			if (SkinName of Player is "Jackalman" or SkinName of Player is "Jackalboy" or SkinName of Player is "Nightmare" or SkinName of Player is "Hellhound"):
+				say "     You can feel the magic that Moreau used to guarantee the new skin you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
+				FeatLoss "Body Shop Guarantee - Skin";
+			else if "Singular" is listed in feats of Player and FaceName of Player is not "Human" and SkinName of Player is not BodyName of Player:
+				say "     You can feel the magic that Moreau used to guarantee the new skin you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your skin in rippling waves, only to be counteracted at every turn. You fall to your knees and cradle your body in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
+				FeatLoss "Body Shop Guarantee - Skin";
+			else if SkinName of Player is not BodyShopGuaranteedSkin:
+				say "     You can feel the magic that Moreau used to guarantee the new skin you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your skin to confirm to the set shape once more.";
+				setmonster BodyShopGuaranteedSkin;
+				choose row MonsterID from the Table of Random Critters;
+				say "     Your skin [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [skin change entry].";
+				now SkinName of Player is Name entry;
+				if Species Name entry is not "":
+					now SkinSpeciesName of Player is Species Name entry;
+				else:
+					now SkinSpeciesName of Player is Name entry;
+				now Skin of Player is skin entry;
+	if "Body Shop Guarantee - Tail" is listed in feats of Player:
+		unless BodyShopGuaranteedtail is personally excluded:
+			if (TailName of Player is "Jackalman" or TailName of Player is "Jackalboy" or TailName of Player is "Nightmare" or TailName of Player is "Hellhound"):
+				say "     You can feel the magic that Moreau used to guarantee the new tail you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
+				FeatLoss "Body Shop Guarantee - Tail";
+			else if "Singular" is listed in feats of Player and TailName of Player is not "Human" and TailName of Player is not BodyName of Player:
+				say "     You can feel the magic that Moreau used to guarantee the new tail you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your tail, only to be counteracted at every turn. You fall to your knees and cradle the tail in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
+				FeatLoss "Body Shop Guarantee - Tail";
+			else if TailName of Player is not BodyShopGuaranteedtail:
+				say "     You can feel the magic that Moreau used to guarantee the new tail you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your tail to confirm to the set shape once more.";
+				setmonster BodyShopGuaranteedtail;
+				choose row MonsterID from the Table of Random Critters;
+				say "     Your tail [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [ass change entry].";
+				now TailName of Player is Name entry;
+				if Species Name entry is not "":
+					now TailSpeciesName of Player is Species Name entry;
+				else:
+					now TailSpeciesName of Player is Name entry;
+				now tail of Player is tail entry;
+	if "Body Shop Guarantee - Crotch" is listed in feats of Player:
+		unless BodyShopGuaranteedCrotch is personally excluded:
+			if (CockName of Player is "Jackalman" or CockName of Player is "Jackalboy" or CockName of Player is "Nightmare" or CockName of Player is "Hellhound"):
+				say "     You can feel the magic that Moreau used to guarantee the new crotch you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
+				FeatLoss "Body Shop Guarantee - Crotch";
+			else if "Singular" is listed in feats of Player and CockName of Player is not "Human" and CockName of Player is not BodyName of Player:
+				say "     You can feel the magic that Moreau used to guarantee the new crotch you bought struggle against the basic nature of your own body, trying its best to enforce its template. A stinging ache builds up in your head as the mystic powers morph your crotch, only to be counteracted at every turn. You fall to your knees and flinch in pain, until eventually something gives way with an audible crackle. Seems like the naga's spell couldn't hold out against the sustained pressure.";
+				FeatLoss "Body Shop Guarantee - Crotch";
+			else if CockName of Player is not BodyShopGuaranteedCrotch:
+				say "     You can feel the magic that Moreau used to guarantee the new crotch you bought build up its power, making you feel hot and flushed. Then it overwhelms what infection you currently have and forces your cock to confirm to the set shape once more.";
+				setmonster BodyShopGuaranteedCrotch;
+				choose row MonsterID from the Table of Random Critters;
+				say "     Your crotch [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [cock change entry].";
+				now CockName of Player is Name entry;
+				if Species Name entry is not "":
+					now CockSpeciesName of Player is Species Name entry;
+				else:
+					now CockSpeciesName of Player is Name entry;
+				now Cock of Player is cock entry;
 
 Section 5 - Events
 

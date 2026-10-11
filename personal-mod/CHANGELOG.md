@@ -1,5 +1,12 @@
 # Personal version changelog
 
+## 2026-10-11 — Compile-condition correction (retry pending)
+
+- The user's first exclusion build failed Inform 7 6M62 translation. The screenshot reported unrecognized negative custom conditions and ambiguous combined conditions in Body Shop guarantees and Dominick's forced transformation rules.
+- Replaced every `is not personally excluded` call with standard `unless` applied to the positive predicate. Kept existing Body Shop, Dominick, Nermine and Latex Mistress conditions separate from the added exclusion check; separated the player-only helper guard too.
+- Compared the seven affected extensions to the first update: their underlying statements and quoted source text are unchanged after accounting for the condition rewrite. All 71 policy/runtime names are unchanged; whitespace review passed.
+- Delivered a complete revision 2 package with all 14 extensions. Full compilation/runtime testing still require the user's working toolchain. An attempted download of the official archived Linux 6M62 compiler failed with HTTP 502.
+
 ## 2026-10-11 — 71 roaming/form exclusions (compile pending)
 
 - Recorded all 71 uploaded entries, normalizing Dalmatian Bitch, Sphinx and Skunk Female.

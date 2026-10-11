@@ -4,7 +4,7 @@
 
 The user reported a successful baseline compile on Windows on 2026-10-11, after installing the extensions and copying the community replacement compiler files into Inform 7's `Compilers` folder. The Discord attachment was named `6L02.zip`, posted 2025-02-03. Its contents and exact compiler versions were not inspected here; the filename is not evidence of a version.
 
-The exclusion changes have **not been compiled or runtime-tested**. This workspace has no compatible Inform compiler or Wine. The delivered update must be compiled with the user's working installation before it is considered playable.
+The first exclusion package failed NI translation on the user's Inform 7 6M62 installation; the Problems screenshot identified custom-condition negation and compound-condition parsing errors. Revision 2 rewrites those conditions and awaits a fresh compile. The revised build has **not been compiled or runtime-tested**. This workspace has no compatible Inform compiler or Wine. A fresh download attempt from the official Linux 6M62 archive returned HTTP 502. The delivered update must be compiled with the user's working installation before it is considered playable.
 
 ## Required project layout
 

@@ -301,7 +301,7 @@ To decide whether (FormName - a text) is personally excluded:
 To decide which list of text is PersonalEncounterPool (Candidates - a list of text):
 	let AllowedCandidates be a list of text;
 	repeat with Candidate running through Candidates:
-		if Candidate is not personally excluded:
+		unless Candidate is personally excluded:
 			add Candidate to AllowedCandidates;
 	decide on AllowedCandidates.
 

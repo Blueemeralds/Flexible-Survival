@@ -575,7 +575,7 @@ to WyattSpecialVoyeurMaleRoute:
 		infect "Husky Bitch";
 		say "     'Just a little more... Can't wait to fuck you...'";
 		WaitLineBreak; [To avoid Latex TF and to reaffirm normal female husky infection. Also to remove cock and add a vagina, in case the previous infections don't make that happen]
-		if "Husky Bitch" is not personally excluded:
+		unless "Husky Bitch" is personally excluded:
 			now FaceName of Player is "Husky Bitch";
 			now Face of Player is "slim, feminine muzzle and large, perky ears over a canine";
 			now BodyName of Player is "Husky Bitch";
@@ -637,7 +637,7 @@ to say WyattSpecialMtF:
 	infect "Husky Bitch";
 	say "     'What a good girl! You're almost done... Come on, just a little more...";
 	WaitLineBreak; [To avoid Latex TF and to reaffirm normal female husky infection. Also to remove cock and add a vagina, in case the previous infections don't make that happen]
-	if "Husky Bitch" is not personally excluded:
+	unless "Husky Bitch" is personally excluded:
 		now FaceName of Player is "Husky Bitch";
 		now Face of Player is "slim, feminine muzzle and large, perky ears over a canine";
 		now BodyName of Player is "Husky Bitch";

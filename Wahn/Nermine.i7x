@@ -562,11 +562,12 @@ to say RareInfectionMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if FemaleList is not banned and "Spidertaur Female" is not personally excluded:
-		choose a blank row in table of fucking options;
-		now title entry is "Female Spidertaur";
-		now sortorder entry is 1;
-		now description entry is "Ask to become a half-human, half-arachnid mythical beast";
+	if FemaleList is not banned:
+		unless "Spidertaur Female" is personally excluded:
+			choose a blank row in table of fucking options;
+			now title entry is "Female Spidertaur";
+			now sortorder entry is 1;
+			now description entry is "Ask to become a half-human, half-arachnid mythical beast";
 	[]
 	repeat with y running from 1 to number of filled rows in table of fucking options:
 		choose row y from the table of fucking options;

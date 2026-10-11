@@ -10,7 +10,7 @@ The user requests changes in ordinary language. Repository instructions live in 
 - The 71 listed strains are excluded from roaming encounters and hunting. New player transformations into those strains are blocked, including applications inside retained scripts.
 - Named scripted challenges, situations, NPC definitions, dialogue, quest state changes and rewards remain in the source. No creature extension has been removed.
 - Existing imported body parts are preserved. The fixed exclusions are separate from the saved ban/ward lists.
-- The modified build has **not been compiled or runtime-tested**. Source inspection is not proof of playable behavior.
+- The first exclusion build failed translation; revision 2 corrects the reported condition syntax. The revised build has **not been compiled or runtime-tested**. Source inspection is not proof of playable behavior.
 
 ## Files
 

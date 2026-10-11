@@ -12,11 +12,12 @@ to say losetolatexmistress:
 		if wslevel > 1 and a random chance of ( wslevel * wslevel ) in 12 succeeds:
 			say "     Getting whipped for the delay, you groan and start lapping across her clit. You run your tongue up and down those quivering lips and delve into her dark tunnel. Deciding to punish you for your delay, she grabs the back of your head with her free hand and holds you in place as she releases her bladder. You cough and sputter as that acrid fluid soaks your face and flows into your mouth. With another blow, she orders you to drink, so you find yourself licking across her pee hole and drinking her piss. It has a strong aftertaste of latex to it that clings to your tongue.";
 			say "     When the flow stops, she orders you back to licking, which you do eagerly, if for nothing else than to try and get that taste out of your mouth... or perhaps to get more of it, part of your confused mind thinks. As you eat her out, you get struck several more times and ordered to go faster, slower or deeper, or to suck her clit, or any other thing she desires of you. And you obey, moaning softly as the pain and pleasure blur. Eventually, your obedient licking pays off, your mistress flogging you hard as she cries out in orgasmic bliss. When she pushes you away, you tumble onto the ground, too sore from the whipping to rise. She grinds her heel down onto your shoulder, calling you a good slave. Reeking of her scent, you can't help but smile before passing out, having been complimented by your dark mistress.";
-			if FaceName of Player is not "Latex Mistress" and "Latex Mistress" is not personally excluded:		[WS results in face TF]
-				choose row MonsterID from the Table of Random Critters;
-				say "[line break]Your face [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [face change entry].";
-				now FaceName of Player is Name entry;
-				now Face of Player is face entry;
+			if FaceName of Player is not "Latex Mistress": [WS results in face TF]
+				unless "Latex Mistress" is personally excluded:
+					choose row MonsterID from the Table of Random Critters;
+					say "[line break]Your face [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [face change entry].";
+					now FaceName of Player is Name entry;
+					now Face of Player is face entry;
 		else:
 			say "     Getting whipped for the delay, you groan and start lapping across her clit. You run your tongue up and down those quivering lips and delve into her dark tunnel. As you eat her out, you get struck several more times and ordered to go faster, slower or deeper, or to suck her clit, or any other thing she desires of you. And you obey, moaning softly as the pain and pleasure blur. Eventually, your obedient licking pays off, your mistress flogging you hard as she cries out in orgasmic bliss. When she pushes you away, you tumble onto the ground, too sore from the whipping to rise. She grinds her heel down onto your shoulder, calling you a good slave. You can't help but smile before passing out, having been complimented by your dark mistress.";
 	else if anallevel is 1:

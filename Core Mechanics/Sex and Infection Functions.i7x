@@ -133,7 +133,8 @@ to SetInfectionsOf ( Target - a person ) to infections of ( Source - a person ):
 		now CuntSpeciesName of Target is CuntSpeciesName of Source;
 
 to SetInfectionsOf ( Target - a person ) to ( Infection - a text ):
-	if Target is Player and Infection is personally excluded, continue the action;
+	if Target is Player:
+		if Infection is personally excluded, continue the action;
 	if there is no Name of Infection in the Table of Random Critters:
 		say "ERROR: Attempted to set the targets infection to '[Infection]'. Please report this on the FS Discord.[line break]";
 		stop the action;
