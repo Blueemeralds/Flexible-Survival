@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "runtime_enforcement": "not_implemented",
+  "blocked_creatures": [],
+  "blocked_forms": [],
+  "blocked_npcs": [],
+  "blocked_events": [],
+  "replacements": [],
+  "custom_content": [],
+  "mechanic_changes": []
+}
