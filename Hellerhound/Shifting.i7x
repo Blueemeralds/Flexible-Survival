@@ -83,6 +83,8 @@ shifting is an action applying to one topic.
 understand "shift into/to/-- [text]" as shifting.
 
 check shifting:
+	if "[the topic understood]" is personally excluded:
+		say "You cannot shift into that excluded form." instead;
 	if Resolution of Secure Area < 2:
 		say "You do not know how to do that!" instead;
 	if Humanity of Player < 50:
@@ -99,6 +101,7 @@ carry out shifting:
 	repeat with X running from 1 to number of filled rows in Table of Random Critters:
 		choose row X from the Table of Random Critters;
 		[add Name entry to critter List;]
+		if Name entry is personally excluded, next;
 		if Name entry exactly matches the text critter, case insensitively:
 			now tmonster is X;
 			now ttransform is 1;
@@ -108,6 +111,7 @@ carry out shifting:
 		repeat with X running from 1 to number of filled rows in Table of Random Critters:
 			choose row X from the Table of Random Critters;
 			[add Name entry to critter List;]
+			if Name entry is personally excluded, next;
 			if Name entry matches the text critter, case insensitively:
 				now tmonster is X;
 				now ttransform is 1;
@@ -127,6 +131,7 @@ Section 3 - Transformation
 
 To transform:
 	choose row tmonster from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	setmonster Name entry;
 	if SkinName of Player is not Name entry:
 		say "[line break]Your skin [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [skin change entry].";

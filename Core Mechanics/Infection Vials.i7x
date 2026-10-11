@@ -149,6 +149,9 @@ understand "vial [text]" as vialing.
 carry out vialing:
 	let NamedVial be the topic understood;
 	let NamedVialCap be NamedVial in title case;
+	if NamedVialCap is personally excluded:
+		say "You cannot use that excluded transformation. The vial remains in your collection.";
+		stop the action;
 	if debug is at level 5:
 		say "DEBUG: [NamedVial][line break]";
 		say "DEBUG: [NamedVialCap] in title case[line break]";

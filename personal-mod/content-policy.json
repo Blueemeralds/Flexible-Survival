@@ -1,11 +1,517 @@
 {
   "schema_version": 1,
-  "runtime_enforcement": "not_implemented",
-  "blocked_creatures": [],
-  "blocked_forms": [],
+  "runtime_enforcement": "implemented_pending_compile",
+  "blocked_creatures": [
+    {
+      "requested_name": "Anime Babe",
+      "source_name": "Anime Babe",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Batcubus",
+      "source_name": "Batcubus",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Bird of Paradise",
+      "source_name": "Bird of Paradise",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Bouncy Succubus",
+      "source_name": "Bouncy Succubus",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Bovine",
+      "source_name": "Bovine",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Breederslut",
+      "source_name": "Breederslut",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Brown Bear Female",
+      "source_name": "Brown Bear Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Centaur Mare",
+      "source_name": "Centaur Mare",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Cheesecake",
+      "source_name": "Cheesecake",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "City Sprite",
+      "source_name": "City Sprite",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Cow-babe Female",
+      "source_name": "Cow-babe Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Dalmation Bitch",
+      "source_name": "Dalmatian Bitch",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Doberman Bitch",
+      "source_name": "Doberman Bitch",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Donkeywoman",
+      "source_name": "Donkeywoman",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Drone Wasp",
+      "source_name": "Drone Wasp",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Ewe",
+      "source_name": "Ewe",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feline",
+      "source_name": "Feline",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Felinoid",
+      "source_name": "Felinoid",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feral Cheetah",
+      "source_name": "Feral Cheetah",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feral Mustang Mare",
+      "source_name": "Feral Mustang Mare",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feral Sea Dragon",
+      "source_name": "Feral Sea Dragon",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feral Sea Dragoness",
+      "source_name": "Feral Sea Dragoness",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Feral Wolf Bitch",
+      "source_name": "Feral Wolf Bitch",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Fluffy Owl",
+      "source_name": "Fluffy Owl",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Furling",
+      "source_name": "Furling",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "German Shepherd Bitch",
+      "source_name": "German Shepherd Bitch",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Gray Squirrel",
+      "source_name": "Gray Squirrel",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Great Dane",
+      "source_name": "Great Dane",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Greek Nymph",
+      "source_name": "Greek Nymph",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Gunbunny",
+      "source_name": "Gunbunny",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Gypsy Horse Transman",
+      "source_name": "Gypsy Horse Transman",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Harpy",
+      "source_name": "Harpy",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Hawkman Female",
+      "source_name": "Hawkman Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Horsemazon",
+      "source_name": "Horsemazon",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Human Hybrid",
+      "source_name": "Human Hybrid",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Husky Bitch",
+      "source_name": "Husky Bitch",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Lamia",
+      "source_name": "Lamia",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Latex Mistress",
+      "source_name": "Latex Mistress",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Leopardman",
+      "source_name": "Leopardman",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Mareslut",
+      "source_name": "Mareslut",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Margay",
+      "source_name": "Margay",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Messy Pig",
+      "source_name": "Messy Pig",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Mushroom Man",
+      "source_name": "Mushroom Man",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Mutant Centaur",
+      "source_name": "Mutant Centaur",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Naiad",
+      "source_name": "Naiad",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Ninja Cat",
+      "source_name": "Ninja Cat",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Orc Female",
+      "source_name": "Orc Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Peacock",
+      "source_name": "Peacock",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Pink Gel",
+      "source_name": "Pink Gel",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Plush Lion",
+      "source_name": "Plush Lion",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Red Kangaroo",
+      "source_name": "Red Kangaroo",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Reindeer",
+      "source_name": "Reindeer",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Retriever Female",
+      "source_name": "Retriever Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Sabretooth",
+      "source_name": "Sabretooth",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Salamander",
+      "source_name": "Salamander",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Satyress",
+      "source_name": "Satyress",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Skunk",
+      "source_name": "Skunk Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Sphynx",
+      "source_name": "Sphinx",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Spidertaur Female",
+      "source_name": "Spidertaur Female",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Squid",
+      "source_name": "Squid",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Succubus",
+      "source_name": "Succubus",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Teddy Bear",
+      "source_name": "Teddy Bear",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Tiger",
+      "source_name": "Tiger",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Viking Woman",
+      "source_name": "Viking Woman",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Vixen Nurse",
+      "source_name": "Vixen Nurse",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Whiptail",
+      "source_name": "Whiptail",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Wolfman Cheerleader",
+      "source_name": "Wolfman Cheerleader",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Wolftaur",
+      "source_name": "Wolftaur",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Wolverine Guard",
+      "source_name": "Wolverine Guard",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Wood Elf",
+      "source_name": "Wood Elf",
+      "random_encounters": true,
+      "scripted_encounters": false
+    },
+    {
+      "requested_name": "Wrestling Wolf",
+      "source_name": "Wrestling Wolf",
+      "random_encounters": true,
+      "scripted_encounters": false
+    }
+  ],
+  "blocked_forms": [
+    "Anime Babe",
+    "Batcubus",
+    "Bird of Paradise",
+    "Bouncy Succubus",
+    "Bovine",
+    "Breederslut",
+    "Brown Bear Female",
+    "Centaur Mare",
+    "Cheesecake",
+    "City Sprite",
+    "Cow-babe Female",
+    "Dalmatian Bitch",
+    "Doberman Bitch",
+    "Donkeywoman",
+    "Drone Wasp",
+    "Ewe",
+    "Feline",
+    "Felinoid",
+    "Feral Cheetah",
+    "Feral Mustang Mare",
+    "Feral Sea Dragon",
+    "Feral Sea Dragoness",
+    "Feral Wolf Bitch",
+    "Fluffy Owl",
+    "Furling",
+    "German Shepherd Bitch",
+    "Gray Squirrel",
+    "Great Dane",
+    "Greek Nymph",
+    "Gunbunny",
+    "Gypsy Horse Transman",
+    "Harpy",
+    "Hawkman Female",
+    "Horsemazon",
+    "Human Hybrid",
+    "Husky Bitch",
+    "Lamia",
+    "Latex Mistress",
+    "Leopardman",
+    "Mareslut",
+    "Margay",
+    "Messy Pig",
+    "Mushroom Man",
+    "Mutant Centaur",
+    "Naiad",
+    "Ninja Cat",
+    "Orc Female",
+    "Peacock",
+    "Pink Gel",
+    "Plush Lion",
+    "Red Kangaroo",
+    "Reindeer",
+    "Retriever Female",
+    "Sabretooth",
+    "Salamander",
+    "Satyress",
+    "Skunk Female",
+    "Sphinx",
+    "Spidertaur Female",
+    "Squid",
+    "Succubus",
+    "Teddy Bear",
+    "Tiger",
+    "Viking Woman",
+    "Vixen Nurse",
+    "Whiptail",
+    "Wolfman Cheerleader",
+    "Wolftaur",
+    "Wolverine Guard",
+    "Wood Elf",
+    "Wrestling Wolf"
+  ],
   "blocked_npcs": [],
   "blocked_events": [],
   "replacements": [],
   "custom_content": [],
-  "mechanic_changes": []
+  "mechanic_changes": [],
+  "scope": {
+    "random_encounters": "exclude listed strains from roaming fights and hunting",
+    "transformations": "block new player infection/partial/full/shifting applications, including in retained scripts",
+    "scripted_encounters": "preserve named challenges, situations, NPCs and scene text",
+    "existing_imported_forms": "preserved; no automatic body reset",
+    "vials": "retain harvesting, trade and quest hand-in; block drinking excluded strains"
+  }
 }

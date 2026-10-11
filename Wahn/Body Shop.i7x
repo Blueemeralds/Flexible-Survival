@@ -467,6 +467,11 @@ to MoreauFaceSelection:
 	clear the screen and hyperlink list;
 
 to say MoreauFaceBuyPayment:
+	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded:
+		now MoreauPaymentAccepted is false;
+		say "That transformation is unavailable. You keep your supplies.";
+		continue the action;
 	say "     The naga nods to you, happy that you have chosen something from his offered wares. 'Well then, that leaves only one thing to take care of - my payment. Given that I offer a unique service, with a guarantee too I want to empathize, I'm sure you will see what I ask as fair.' The naga's green eyes focus on your own as he says this, and you can't help but feel a little lightheaded at the intensity of his gaze. ";
 	if MoreauDiscount is true:
 		say "A few seconds later, Moreau adds, 'For you, since you are trading in something, it will be four bottles of water or items of food.'";
@@ -617,6 +622,11 @@ to MoreauBodySelection:
 	clear the screen and hyperlink list;
 
 to say MoreauBodyBuyPayment:
+	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded:
+		now MoreauPaymentAccepted is false;
+		say "That transformation is unavailable. You keep your supplies.";
+		continue the action;
 	say "     The naga nods to you, happy that you have chosen something from his offered wares. 'Well then, that leaves only one thing to take care of - my payment. Given that I offer a unique service, with a guarantee too I want to empathize, I'm sure you will see what I ask as fair.' The naga's green eyes focus on your own as he says this, and you can't help but feel a little lightheaded at the intensity of his gaze. ";
 	if MoreauDiscount is true:
 		say "A few seconds later, Moreau adds, 'For you, since you are trading in something, it will be four bottles of water or items of food.'";
@@ -768,6 +778,11 @@ to MoreauSkinSelection:
 	clear the screen and hyperlink list;
 
 to say MoreauSkinBuyPayment:
+	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded:
+		now MoreauPaymentAccepted is false;
+		say "That transformation is unavailable. You keep your supplies.";
+		continue the action;
 	say "     The naga nods to you, happy that you have chosen something from his offered wares. 'Well then, that leaves only one thing to take care of - my payment. Given that I offer a unique service, with a guarantee too I want to empathize, I'm sure you will see what I ask as fair.' The naga's green eyes focus on your own as he says this, and you can't help but feel a little lightheaded at the intensity of his gaze. ";
 	if MoreauDiscount is true:
 		say "A few seconds later, Moreau adds, 'For you, since you are trading in something, it will be four bottles of water or items of food.'";
@@ -918,6 +933,11 @@ to MoreauTailSelection:
 	clear the screen and hyperlink list;
 
 to say MoreauTailBuyPayment:
+	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded:
+		now MoreauPaymentAccepted is false;
+		say "That transformation is unavailable. You keep your supplies.";
+		continue the action;
 	say "     The naga nods to you, happy that you have chosen something from his offered wares. 'Well then, that leaves only one thing to take care of - my payment. Given that I offer a unique service, with a guarantee too I want to empathize, I'm sure you will see what I ask as fair.' The naga's green eyes focus on your own as he says this, and you can't help but feel a little lightheaded at the intensity of his gaze. ";
 	if MoreauDiscount is true:
 		say "A few seconds later, Moreau adds, 'For you, since you are trading in something, it will be four bottles of water or items of food.'";
@@ -1068,6 +1088,11 @@ to MoreauCockSelection:
 	clear the screen and hyperlink list;
 
 to say MoreauCrotchBuyPayment:
+	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded:
+		now MoreauPaymentAccepted is false;
+		say "That transformation is unavailable. You keep your supplies.";
+		continue the action;
 	say "     The naga nods to you, happy that you have chosen something from his offered wares. 'Well then, that leaves only one thing to take care of - my payment. Given that I offer a unique service, with a guarantee too I want to empathize, I'm sure you will see what I ask as fair.' The naga's green eyes focus on your own as he says this, and you can't help but feel a little lightheaded at the intensity of his gaze. ";
 	if MoreauDiscount is true:
 		say "A few seconds later, Moreau adds, 'For you, since you are trading in something, it will be four bottles of water or items of food.'";
@@ -1175,7 +1200,7 @@ to say MoreauBuySuccessful:
 	now LastMoreauPartSale is turns;
 
 An everyturn rule:
-	if "Body Shop Guarantee - Face" is listed in feats of Player:
+	if "Body Shop Guarantee - Face" is listed in feats of Player and BodyShopGuaranteedFace is not personally excluded:
 		if (FaceName of Player is "Jackalman" or FaceName of Player is "Jackalboy" or FaceName of Player is "Nightmare" or FaceName of Player is "Hellhound"):
 			say "     You can feel the magic that Moreau used to guarantee the new face you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
 			FeatLoss "Body Shop Guarantee - Face";
@@ -1193,7 +1218,7 @@ An everyturn rule:
 			else:
 				now FaceSpeciesName of Player is Name entry;
 			now Face of Player is face entry;
-	if "Body Shop Guarantee - Body" is listed in feats of Player:
+	if "Body Shop Guarantee - Body" is listed in feats of Player and BodyShopGuaranteedBody is not personally excluded:
 		if (BodyName of Player is "Jackalman" or BodyName of Player is "Jackalboy" or BodyName of Player is "Nightmare" or BodyName of Player is "Hellhound"):
 			say "     You can feel the magic that Moreau used to guarantee the new body you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
 			FeatLoss "Body Shop Guarantee - Body";
@@ -1209,7 +1234,7 @@ An everyturn rule:
 				now BodySpeciesName of Player is Name entry;
 			now Body of Player is body entry;
 			attributeinfect; [sets the new attributes]
-	if "Body Shop Guarantee - Skin" is listed in feats of Player:
+	if "Body Shop Guarantee - Skin" is listed in feats of Player and BodyShopGuaranteedSkin is not personally excluded:
 		if (SkinName of Player is "Jackalman" or SkinName of Player is "Jackalboy" or SkinName of Player is "Nightmare" or SkinName of Player is "Hellhound"):
 			say "     You can feel the magic that Moreau used to guarantee the new skin you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
 			FeatLoss "Body Shop Guarantee - Skin";
@@ -1227,7 +1252,7 @@ An everyturn rule:
 			else:
 				now SkinSpeciesName of Player is Name entry;
 			now Skin of Player is skin entry;
-	if "Body Shop Guarantee - Tail" is listed in feats of Player:
+	if "Body Shop Guarantee - Tail" is listed in feats of Player and BodyShopGuaranteedtail is not personally excluded:
 		if (TailName of Player is "Jackalman" or TailName of Player is "Jackalboy" or TailName of Player is "Nightmare" or TailName of Player is "Hellhound"):
 			say "     You can feel the magic that Moreau used to guarantee the new tail you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
 			FeatLoss "Body Shop Guarantee - Tail";
@@ -1245,7 +1270,7 @@ An everyturn rule:
 			else:
 				now TailSpeciesName of Player is Name entry;
 			now tail of Player is tail entry;
-	if "Body Shop Guarantee - Crotch" is listed in feats of Player:
+	if "Body Shop Guarantee - Crotch" is listed in feats of Player and BodyShopGuaranteedCrotch is not personally excluded:
 		if (CockName of Player is "Jackalman" or CockName of Player is "Jackalboy" or CockName of Player is "Nightmare" or CockName of Player is "Hellhound"):
 			say "     You can feel the magic that Moreau used to guarantee the new crotch you bought struggle against the magic of your other transformation. A stinging ache builds up in your head as the mystic powers build up higher and higher, pushing in opposing directions - then with an audible crackle, something gives way. Seems like the naga's spell couldn't hold out against what made you as you are.";
 			FeatLoss "Body Shop Guarantee - Crotch";

@@ -820,6 +820,7 @@ to say leoparkscene11:
 	move player to Lion's Den;
 
 to felinebodyshift:
+	if "Feline" is personally excluded, continue the action;
 	setmonster "Feline";
 	choose row MonsterID from Table of Random Critters;
 	now BodyName of Player is "Feline";

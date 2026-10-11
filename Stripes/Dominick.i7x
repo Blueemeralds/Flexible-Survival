@@ -831,20 +831,21 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 34;
-			now FaceName of Player is "Breederslut";
-			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now TailName of Player is "Breederslut";
-			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now BodyName of Player is "Breederslut";
-			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now SkinName of Player is "Breederslut";
-			now Skin of Player is "golden brown and snowy white fur-covered";
-			now Cock Count of Player is 0;
-			now Cunt Count of Player is 1;
-			now Nipple Count of Player is 2;
-			now Breast Size of Player is 12;
-			now Cunt Depth of Player is 16;
-			now Cunt Tightness of Player is 12;
+			if "Breederslut" is not personally excluded:
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now TailName of Player is "Breederslut";
+				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+				now Cock Count of Player is 0;
+				now Cunt Count of Player is 1;
+				now Nipple Count of Player is 2;
+				now Breast Size of Player is 12;
+				now Cunt Depth of Player is 16;
+				now Cunt Tightness of Player is 12;
 			now ForcedBreederslutTF is 3;
 			NPCSexAftermath Player receives "PussyFuck" from Dominick;
 	else if HP of Dominick is 41:
@@ -917,20 +918,21 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 44;
-			now FaceName of Player is "Breederslut";
-			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now TailName of Player is "Breederslut";
-			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now BodyName of Player is "Breederslut";
-			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now SkinName of Player is "Breederslut";
-			now Skin of Player is "golden brown and snowy white fur-covered";
-			now Cock Count of Player is 0;
-			now Cunt Count of Player is 1;
-			now Nipple Count of Player is 2;
-			now Breast Size of Player is 12;
-			now Cunt Depth of Player is 16;
-			now Cunt Tightness of Player is 12;
+			if "Breederslut" is not personally excluded:
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now TailName of Player is "Breederslut";
+				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+				now Cock Count of Player is 0;
+				now Cunt Count of Player is 1;
+				now Nipple Count of Player is 2;
+				now Breast Size of Player is 12;
+				now Cunt Depth of Player is 16;
+				now Cunt Tightness of Player is 12;
 			now ForcedBreederslutTF is 3;
 			NPCSexAftermath Player receives "PussyFuck" from Dominick;
 	else if HP of Dominick is 51:
@@ -945,23 +947,24 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 54;
-			now FaceName of Player is "Breederslut";
-			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now TailName of Player is "Breederslut";
-			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now BodyName of Player is "Breederslut";
-			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now SkinName of Player is "Breederslut";
-			now Skin of Player is "golden brown and snowy white fur-covered";
-			now Cock Count of Player is 1;
-			now CockName of Player is "Breederslut";
-			now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
-			now Cunt Count of Player is 0;
-			now Nipple Count of Player is 2;
-			now Breast Size of Player is 12;
-			now Cock Length of Player is 2;
-			now Ball Size of Player is 6;
-			now CockName of Player is "Breederslut";
+			if "Breederslut" is not personally excluded:
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now TailName of Player is "Breederslut";
+				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+				now Cock Count of Player is 1;
+				now CockName of Player is "Breederslut";
+				now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
+				now Cunt Count of Player is 0;
+				now Nipple Count of Player is 2;
+				now Breast Size of Player is 12;
+				now Cock Length of Player is 2;
+				now Ball Size of Player is 6;
+				now CockName of Player is "Breederslut";
 			now ForcedBreederslutBoyTF is 3;
 			NPCSexAftermath Player receives "AssFuck" from Dominick;
 		else:
@@ -978,23 +981,24 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 54;
-			now FaceName of Player is "Breederslut";
-			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now TailName of Player is "Breederslut";
-			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now BodyName of Player is "Breederslut";
-			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now SkinName of Player is "Breederslut";
-			now Skin of Player is "golden brown and snowy white fur-covered";
-			now Cock Count of Player is 1;
-			now CockName of Player is "Breederslut";
-			now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
-			now Cunt Count of Player is 0;
-			now Nipple Count of Player is 2;
-			now Breast Size of Player is 0;
-			now Cock Length of Player is 2;
-			now Ball Size of Player is 6;
-			now CockName of Player is "Breederslut";
+			if "Breederslut" is not personally excluded:
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now TailName of Player is "Breederslut";
+				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+				now Cock Count of Player is 1;
+				now CockName of Player is "Breederslut";
+				now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
+				now Cunt Count of Player is 0;
+				now Nipple Count of Player is 2;
+				now Breast Size of Player is 0;
+				now Cock Length of Player is 2;
+				now Ball Size of Player is 6;
+				now CockName of Player is "Breederslut";
 			now ForcedBreederslutBoyTF is 3;
 			NPCSexAftermath Player receives "AssFuck" from Dominick;
 
@@ -1014,10 +1018,11 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 		SanLoss 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 32;
-		now FaceName of Player is "Breederslut";
-		now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-		now Cock Count of Player is 0;
-		now Cunt Count of Player is 1;
+		if "Breederslut" is not personally excluded:
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now Cock Count of Player is 0;
+			now Cunt Count of Player is 1;
 		now ForcedBreederslutTF is 1;
 		NPCSexAftermath Player receives "PussyFuck" from Dominick;
 	else if HP of Dominick is 41:
@@ -1056,12 +1061,13 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 			SanLoss 5;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 42;
-			now FaceName of Player is "Breederslut";
-			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now Cock Count of Player is 0;
-			now Cunt Count of Player is 1;
-			now Cunt Depth of Player is 16;
-			now Cunt Tightness of Player is 12;
+			if "Breederslut" is not personally excluded:
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now Cock Count of Player is 0;
+				now Cunt Count of Player is 1;
+				now Cunt Depth of Player is 16;
+				now Cunt Tightness of Player is 12;
 			now ForcedBreederslutTF is 1;
 			NPCSexAftermath Player receives "PussyFuck" from Dominick;
 	else if HP of Dominick is 32 or HP of Dominick is 42:
@@ -1090,12 +1096,13 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 			now lastfuck of Dominick is turns;
 			if HP of Dominick is 32 or HP of Dominick is 42:
 				increase HP of Dominick by 1;
-			now SkinName of Player is "Breederslut";
-			now Skin of Player is "golden brown and snowy white fur-covered";
-			now TailName of Player is "Breederslut";
-			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now Nipple Count of Player is 2;
-			now Breast Size of Player is 12;
+			if "Breederslut" is not personally excluded:
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+				now TailName of Player is "Breederslut";
+				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+				now Nipple Count of Player is 2;
+				now Breast Size of Player is 12;
 			now ForcedBreederslutTF is 2;
 	else if HP of Dominick is 33 or HP of Dominick is 43:
 		say "     You slink over to Dom's throne, ready for your final transformation session with your master. He gestures for you to sit on his lap,[if scalevalue of Player > 3] giving you a reassuring nod when you hesitate, gently settling your full weight onto Dom[else if scalevalue of Player < 2] and with his help, you haul yourself onto his lap[else] you sit down eagerly[end if]. He says,[if scalevalue of Player > 3] his voice a bit muffled by your mass,[end if] 'You're finally ready to be my bitch. Exactly as you're meant to be. Now take my cock and put it inside you.' He waits patiently as you adjust yourself to take his massive rod, barely grunting as you slide down his length to his knot. Dom lets you feel him fully for nearly a minute, flexing his dick inside you in panting silence. The minute passes and he growls, 'Now fuck yourself[if HP of Dominick is 33] slut[else] sissy[end if]. Fuck yourself whole.'";
@@ -1107,9 +1114,10 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 		now lastfuck of Dominick is turns;
 		if HP of Dominick is 33 or HP of Dominick is 43:
 			increase HP of Dominick by 1;
-		now BodyName of Player is "Breederslut";
-		now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
-		now scalevalue of Player is 2;
+		if "Breederslut" is not personally excluded:
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+			now scalevalue of Player is 2;
 		NPCSexAftermath Player receives "PussyFuck" from Dominick;
 		now ForcedBreederslutTF is 3;
 
@@ -1128,10 +1136,11 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		SanLoss 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 52;
-		now FaceName of Player is "Breederslut";
-		now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-		now Cock Count of Player is 1;
-		now Cunt Count of Player is 0;
+		if "Breederslut" is not personally excluded:
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now Cock Count of Player is 1;
+			now Cunt Count of Player is 0;
 		now ForcedBreederslutBoyTF is 1;
 		NPCSexAftermath Player receives "AssFuck" from Dominick;
 	else if HP of Dominick is 52:
@@ -1148,15 +1157,16 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		raise Player Libido by 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 53;
-		now SkinName of Player is "Breederslut";
-		now Skin of Player is "golden brown and snowy white fur-covered";
-		now TailName of Player is "Breederslut";
-		now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-		now Nipple Count of Player is 2;
-		if "Breasts" is listed in feats of Player:
-			now Breast Size of Player is 12;
-		else:
-			now Breast Size of Player is 0;
+		if "Breederslut" is not personally excluded:
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
+			now TailName of Player is "Breederslut";
+			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
+			now Nipple Count of Player is 2;
+			if "Breasts" is listed in feats of Player:
+				now Breast Size of Player is 12;
+			else:
+				now Breast Size of Player is 0;
 		now ForcedBreederslutBoyTF is 2;
 	else if HP of Dominick is 53:
 		say "     You slink over to Dom's throne, ready for your final transformation session with your master. He gestures for you to sit on his lap,[if scalevalue of Player > 3] giving you a reassuring nod when you hesitate, gently settling your full weight onto Dom[else if scalevalue of Player < 2] and with his help, you haul yourself onto his lap[else] you sit down eagerly[end if]. He says,[if scalevalue of Player > 3] his voice a bit muffled by your mass,[end if] 'You're finally ready to be my bitch. Exactly as you're meant to be. Now take my cock and put it inside you.' He waits patiently as you adjust yourself to take his massive rod, barely grunting as you slide down his length to his knot. Dom lets you feel him fully for nearly a minute, flexing his dick inside you in panting silence. The minute passes and he growls, 'Now fuck yourself slut. Fuck yourself whole.'";
@@ -1170,9 +1180,10 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		raise Player Libido by 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 54;
-		now BodyName of Player is "Breederslut";
-		now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
-		now scalevalue of Player is 2;
+		if "Breederslut" is not personally excluded:
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+			now scalevalue of Player is 2;
 		NPCSexAftermath Player receives "AssFuck" from Dominick;
 		now ForcedBreederslutBoyTF is 3;
 
@@ -1225,7 +1236,7 @@ to say ForcedSubToDomSex7:			[Dom fucks your snatch doggy style.]
 Section 9 - Forced Breederslut and Forced Breederslut Boy TF
 
 An everyturn rule:
-	if ForcedBreederslutTF > 0 and ForcedBreederslutTF < 4:
+	if ForcedBreederslutTF > 0 and ForcedBreederslutTF < 4 and "Breederslut" is not personally excluded:
 		if ForcedBreederslutTF >= 1:
 			if FaceName of Player is not "Breederslut":
 				say "     Something seems wrong to you for a minute, making you whine and whimper as you try to work out the problem. You can feel the pressure inside your head building, until finally something seems to snap, and you let out a loud low moan of pleasure as your face begins to reshape itself. Your moaning cry soon transforms into a howl, as you happily greet the return of the cute face your master gave you.";
@@ -1257,7 +1268,7 @@ An everyturn rule:
 						now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
 					if scalevalue of Player is not 2:
 						now scalevalue of Player is 2;
-	if ForcedBreederslutBoyTF > 0 and ForcedBreederslutBoyTF < 4:
+	if ForcedBreederslutBoyTF > 0 and ForcedBreederslutBoyTF < 4 and "Breederslut" is not personally excluded:
 		if ForcedBreederslutBoyTF >= 1:
 			if FaceName of Player is not "Breederslut":
 				say "     Something seems wrong to you for a minute, making you whine and whimper as you try to work out the problem. You can feel the pressure inside your head building, until finally something seems to snap, and you let out a loud low moan of pleasure as your face begins to reshape itself. Your moaning cry soon transforms into a howl, as you happily greet the return of the cute face your master gave you.";

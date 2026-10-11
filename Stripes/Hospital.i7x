@@ -1172,14 +1172,14 @@ to say hosploss:
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from the Table of Random Critters;
-	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player:
+	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is personally excluded:
 		sort Table of Random Critters in random order;
 		now MonsterID is 1;
 		choose row MonsterID from the Table of Random Critters;
 	now TailName of Player is Name entry;
 	now tail of Player is tail entry;
 	say "     'The first injection will adjust the volunteer's lower spine. We shall begin there, as the changes may be the least visible, depending on the outcome.' The mouse the jabs a second needle, quite painfully, into your ass. As he watches, the doctor comments to the group about how your ass becomes malleable as [ass change entry].";
-	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player:
+	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is personally excluded:
 		sort Table of Random Critters in random order;
 		now MonsterID is 1;
 		choose row MonsterID from the Table of Random Critters;
@@ -1187,7 +1187,7 @@ to say hosploss:
 	now Face of Player is face entry;
 	WaitLineBreak;
 	say "     'We shall now move on to the head,' he states, motioning for the orderly to step up. He grabs your neck and squeezes it painfully as he injects the next formula into your carotid artery, sending the fluid up into your head. As a burning sensation courses through your head, the doctor discusses how [face change entry]. As your face shifts and changes, the orderly adjusts the various straps as necessary, keeping you restrained.";
-	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player:
+	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player or Name entry is personally excluded:
 		sort Table of Random Critters in random order;
 		now MonsterID is 1;
 		choose row MonsterID from the Table of Random Critters;
@@ -1200,7 +1200,7 @@ to say hosploss:
 	say "     Actually, during this brief break in the procedure, you are able to take stock of the group watching. It seems that some have become rather aroused by your transformation. Several of the female nurses are riding the laps of the jaguars and male dogs while one of the herm nurses has strapped a restrained weasel to the railing and is buggering him hard and fast. Catching your eyes on her, she even winks at you.";
 	WaitLineBreak;
 	say "     You can see that the [if hospfight is 2]monstrous mouse is not immune to the increasing sexual energy in the room, having grown quite hard during the procedure. Another of the vixen nurses is on her knees, licking and kissing the large cock. Her muzzle is pulled onto the thick shaft as Dr. Mouse gets tired of foreplay and starts facefucking her with a low growl. She takes it in eagerly, playing with his heavy balls until he cums[else]albino mouse is not immune to the increasing sexual energy in the room, having grown quite hard during the procedure. His cock is small, perhaps about four inches to match his small height. But his balls are quite large, perhaps each the size of a peach. One of the vixen nurses is on her knees, licking and kissing his cock before taking it into her muzzle. She fondles his balls and sucks his shaft obediently until he sends his ample load[end if] down her throat. Pushing her off after he's done, the last few spurts of his thick seed coat her face and muzzle.";
-	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player or Name entry is BodyName of Player:
+	while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player or Name entry is BodyName of Player or Name entry is personally excluded:
 		sort Table of Random Critters in random order;
 		now MonsterID is 1;
 		choose row MonsterID from the Table of Random Critters;
@@ -1214,7 +1214,7 @@ to say hosploss:
 	follow the sex change rule;
 	WaitLineBreak;
 	if Player is male:
-		while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player or Name entry is BodyName of Player or Name entry is CockName of Player:
+		while ( there is a non-infectious entry and non-infectious entry is true ) or there is no Name entry or Name entry is TailName of Player or Name entry is FaceName of Player or Name entry is SkinName of Player or Name entry is BodyName of Player or Name entry is CockName of Player or Name entry is personally excluded:
 			sort Table of Random Critters in random order;
 			now MonsterID is 1;
 			choose row MonsterID from the Table of Random Critters;

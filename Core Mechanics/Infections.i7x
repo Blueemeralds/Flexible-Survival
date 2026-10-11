@@ -9,6 +9,7 @@ skipcockchange is a truth state that varies.[@Tag:NotSaved] skipcockchange is us
 
 This is the sex change rule:
 	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	let singlesexadjust be 0;
 	if "Single Sexed" is listed in feats of Player:
 		if Player is herm:
@@ -256,6 +257,7 @@ Part 2 - Breast Change
 
 This is the breast change rule:
 	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	let singlesexadjust be 0;
 	if "Single Sexed" is listed in feats of Player:
 		if Player is herm:
@@ -403,6 +405,7 @@ To Infect:
 		continue the action;
 	if ( scenario is "Researcher" or nanite collector is equipped ) and ( there is no resbypass entry or resbypass entry is false ):
 		vialchance Name entry;
+	if Name entry is personally excluded, continue the action;
 	if scenario is "Researcher" and researchbypass is 0 and ( there is no resbypass entry or resbypass entry is false ):
 		continue the action;
 	if NewTypeInfection entry is true and NewTypeInfectionActive is true:
@@ -496,6 +499,7 @@ To MultiInfect (x - text) repeats (repeatCount - number):
 	if scenario is "Researcher" and researchbypass is 0:
 		vialchance x;
 		continue the action;
+	if x is personally excluded, continue the action;
 	setmonster x;
 	choose row MonsterID from Table of Random Critters;
 	if BannedStatus entry is true: [banned creatures can't infect]
@@ -519,6 +523,7 @@ To MultiInfect (x - text) repeats (repeatCount - number):
 
 to OldInfectionRoll: [old infections with less body parts made before 07.05.2019]
 	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	let x be 4;
 	if "Resistant" is listed in feats of Player and a random chance of 1 in 3 succeeds:
 		now x is 6; [33% chance of no mutation]
@@ -634,6 +639,7 @@ to OldInfectionRoll: [old infections with less body parts made before 07.05.2019
 
 to NewInfectionRoll:
 	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	let MonsterName be name entry;
 	choose a row with name of MonsterName in the Table of New Infection Parts;
 	let x be 0;
@@ -951,6 +957,7 @@ to attributeinfect silently:
 
 to attributeinfect silence state is ( Silence - a number ): [sets the player values from the new attributes]
 	choose row MonsterID from the Table of Random Critters;
+	if Name entry is personally excluded, continue the action;
 	if BodyName of Player is listed in infections of TaurList or BodyName of Player is listed in infections of NoLegList:
 		repeat with z running through equipped equipment:
 			if taur-compatible of z is false:
@@ -1012,18 +1019,18 @@ to randomInfect:
 
 to weakrandominfect: [does not bypass researcher protection]
 	sort Table of Random Critters in random order;
-	now MonsterID is 1;
-	choose row MonsterID from Table of Random Critters;
-	while there is a non-infectious entry and (non-infectious entry is true or area entry is "Nowhere"):
-		increase MonsterID by 1; [checking the next creature]
-		choose row MonsterID from Table of Random Critters; [selecting the next row]
-		if BannedStatus entry is true: [banned creatures can't be used to infect]
-			if debugactive is 1:
-				say "DEBUG -> Can't infect with creature [Name entry] because it has Banned: [BannedStatus entry][line break]";
-			next;
-	choose row MonsterID from Table of Random Critters;
-	if non-infectious entry is false and area entry is not "Nowhere": [last check that it selected something fitting]
+	let PreviousMonsterID be MonsterID;
+	repeat with CandidateRow running from 1 to number of filled rows in Table of Random Critters:
+		choose row CandidateRow from Table of Random Critters;
+		if there is no Name entry, next;
+		if Name entry is personally excluded, next;
+		if BannedStatus entry is true, next;
+		if there is a non-infectious entry and non-infectious entry is true, next;
+		if there is no area entry or area entry is "Nowhere", next;
+		now MonsterID is CandidateRow;
 		infect;
+		continue the action;
+	now MonsterID is PreviousMonsterID; [no eligible infection: leave the player unchanged]
 
 Part 5 - SetMonster Function
 

@@ -52,6 +52,8 @@ To fight:
 				if SkinName of Player is Name entry, add Name entry to PossibleEncounters;
 				if TailName of Player is Name entry, add Name entry to PossibleEncounters;
 				if CockName of Player is Name entry, add Name entry to PossibleEncounters;
+	if inasituation is false: [retain fights selected inside scripted situations]
+		now PossibleEncounters is PersonalEncounterPool PossibleEncounters;
 	if PossibleEncounters is not empty:
 		sort PossibleEncounters in random order;
 		let RandomChosenMonster be entry 1 in PossibleEncounters;

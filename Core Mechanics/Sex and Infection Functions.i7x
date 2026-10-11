@@ -133,6 +133,7 @@ to SetInfectionsOf ( Target - a person ) to infections of ( Source - a person ):
 		now CuntSpeciesName of Target is CuntSpeciesName of Source;
 
 to SetInfectionsOf ( Target - a person ) to ( Infection - a text ):
+	if Target is Player and Infection is personally excluded, continue the action;
 	if there is no Name of Infection in the Table of Random Critters:
 		say "ERROR: Attempted to set the targets infection to '[Infection]'. Please report this on the FS Discord.[line break]";
 		stop the action;
@@ -207,6 +208,7 @@ to attributeinfect with/-- ( Infection - a text ) silently:
 	attributeinfect Infection silence state is 1;
 
 to attributeinfect with/-- ( Infection - a text ) silence state is ( Silence - a number ):
+	if Infection is personally excluded, continue the action;
 	let StoredMonsterID be MonsterID;
 	setmonster Infection silently;
 	if Silence is 0:
@@ -222,6 +224,7 @@ to turn the/-- Player into a/an/-- ( Infection - a text ) silently:
 	turn Player into Infection silence state is 1;
 
 to turn the/-- Player into a/an/-- ( Infection - a text ) silence state is ( Silence - a number ):
+	if Infection is personally excluded, continue the action;
 	if there is no Name of Infection in the Table of Random Critters:
 		say "ERROR: Attempted to set the players infection to '[Infection]'. Please report this on the FS Discord.[line break]";
 		stop the action;

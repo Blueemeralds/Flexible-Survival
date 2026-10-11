@@ -285,4 +285,24 @@ to oldflagunward (flagname - text):
 		-- "Mindcontrol": now MindcontrolList is not warded;
 		-- "Vore": now VoreList is not warded;
 
+Section 5 - Personal Form and Roaming Encounter Exclusions
+
+[These exclusions do not set BannedStatus or disable any situation/NPC.
+Named scripted challenges remain available, but the player cannot acquire these forms.
+Kept outside the saved ban/ward lists so import and ban-menu changes cannot clear them.]
+PersonalExcludedForms is a list of text that varies.[@Tag:NotSaved]
+PersonalExcludedForms is {"Anime Babe", "Batcubus", "Bird of Paradise", "Bouncy Succubus", "Bovine", "Breederslut", "Brown Bear Female", "Centaur Mare", "Cheesecake", "City Sprite", "Cow-babe Female", "Dalmatian Bitch", "Doberman Bitch", "Donkeywoman", "Drone Wasp", "Ewe", "Feline", "Felinoid", "Feral Cheetah", "Feral Mustang Mare", "Feral Sea Dragon", "Feral Sea Dragoness", "Feral Wolf Bitch", "Fluffy Owl", "Furling", "German Shepherd Bitch", "Gray Squirrel", "Great Dane", "Greek Nymph", "Gunbunny", "Gypsy Horse Transman", "Harpy", "Hawkman Female", "Horsemazon", "Human Hybrid", "Husky Bitch", "Lamia", "Latex Mistress", "Leopardman", "Mareslut", "Margay", "Messy Pig", "Mushroom Man", "Mutant Centaur", "Naiad", "Ninja Cat", "Orc Female", "Peacock", "Pink Gel", "Plush Lion", "Red Kangaroo", "Reindeer", "Retriever Female", "Sabretooth", "Salamander", "Satyress", "Skunk Female", "Sphinx", "Spidertaur Female", "Squid", "Succubus", "Teddy Bear", "Tiger", "Viking Woman", "Vixen Nurse", "Whiptail", "Wolfman Cheerleader", "Wolftaur", "Wolverine Guard", "Wood Elf", "Wrestling Wolf"}.
+
+To decide whether (FormName - a text) is personally excluded:
+	repeat with ExcludedForm running through PersonalExcludedForms:
+		if FormName exactly matches the text ExcludedForm, case insensitively, decide yes;
+	decide no.
+
+To decide which list of text is PersonalEncounterPool (Candidates - a list of text):
+	let AllowedCandidates be a list of text;
+	repeat with Candidate running through Candidates:
+		if Candidate is not personally excluded:
+			add Candidate to AllowedCandidates;
+	decide on AllowedCandidates.
+
 Lists and Banning ends here.

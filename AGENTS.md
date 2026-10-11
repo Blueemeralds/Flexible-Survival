@@ -5,7 +5,7 @@ This repository is Blueemeralds' personal version of Flexible Survival. The user
 ## Scope and preservation
 
 - Preserve all unrelated gameplay, content, commands, plots, and mechanics. Make only the requested changes and fixes needed for those changes.
-- Never treat examples from a conversation as an actual removal request. No content is currently selected for removal.
+- Never treat examples from a conversation as an actual removal request. The explicit exclusion scope is recorded in personal-mod/content-policy.json; scripted encounters are retained.
 - Use `personal-version` for personal work. Do not modify Nuku's upstream repository or submit upstream changes unless requested.
 - Read `personal-mod/README.md`, `personal-mod/content-policy.json`, and `personal-mod/CHANGELOG.md` before making changes. Record explicit user decisions there.
 - Make routine technical decisions autonomously. Ask only for design ambiguity that materially changes the result, missing account access, or a necessary user-owned file.
@@ -22,5 +22,5 @@ This repository is Blueemeralds' personal version of Flexible Survival. The user
 - Treat text searches and compilation as separate from runtime testing. Report exactly what was run and any remaining build or test blocker.
 - Do not promise binary save compatibility across recompilation. Preserve and verify the game's export/import workflow where applicable.
 - Use small, reversible commits. Commit and push completed, validated work to the personal branch; never force-push over user work. If a change is unverified, clearly label it as such and do not call it ready to play.
-- Update the policy and changelog with each implemented design change. Empty policy lists currently have no runtime effect; implement and verify enforcement before saying a policy is active.
+- Update the policy and changelog with each implemented design change. The JSON policy is documentation; verify its Inform implementation and report pending compilation or runtime checks.
 - Prefer a complete playable game artifact when a build is available. Do not require the user to copy source snippets manually.

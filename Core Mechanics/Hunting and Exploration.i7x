@@ -204,7 +204,9 @@ carry out HuntAction:
 			now Found is 13; [no area specified, error]
 			if debugactive is 1:
 				say "DEBUG -> Error, no Area Entry found![line break]";
-		if BannedStatus entry is true:
+		if Name entry is personally excluded:
+			now Found is 15; [excluded from roaming encounters, scripts remain available]
+		else if BannedStatus entry is true:
 			now Found is 14; [banned creatures]
 			if debugactive is 1:
 				say "DEBUG -> The creature has been banned from the game![line break]";
@@ -243,6 +245,7 @@ carry out HuntAction:
 			repeat through Table of Random Critters:
 				if there is no area entry or area entry is "Nowhere", next; [nowhere creatures can't be hunted]
 				if there is no Name entry, next; [broken creatures / empty lines get ignored]
+				if Name entry is personally excluded, next;
 				if Found is not 10 and (Name entry matches the text HuntId, case insensitively or enemy title entry matches the text HuntId, case insensitively or enemy Name entry matches the text HuntId, case insensitively): [no target creature found yet]
 					if debugactive is 1:
 						say "DEBUG -> Found creature: [Name entry].[line break]";
@@ -363,6 +366,7 @@ carry out HuntAction:
 							now CreatureArtworkOverride is false;
 							now inasituation is false;
 						break;
+	now PossibleEncounters is PersonalEncounterPool PossibleEncounters;
 	if PossibleEncounters is not empty and Found is 10: [got list of creatures in the area & found the target creature]
 		sort PossibleEncounters in random order; [the one who gets put on #1 is the winner]
 		if debugactive is 1:
@@ -391,6 +395,8 @@ carry out HuntAction:
 			say "[bold type]Error. No area specified for a '[HuntId]'. Please report this on the FS discord.[roman type][line break]";
 		-- 14: [creature: banned]
 			say "[bold type]The creature you are hunting has been banned from the game.[roman type][line break]";
+		-- 15: [creature: personal roaming exclusion]
+			say "[bold type]That creature is excluded from roaming encounters.[roman type][line break]";
 		-- 21: [room: private rooms]
 			say "[bold type]You don't think you can find a way there without help. The path may be well hidden or you could need a guide.[roman type][line break]";
 		-- 22: [room: perception check fail]

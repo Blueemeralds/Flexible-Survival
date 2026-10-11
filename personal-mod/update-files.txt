@@ -1,0 +1,14 @@
+Core Mechanics\Fighting.i7x
+Core Mechanics\Hunting and Exploration.i7x
+Core Mechanics\Infection Vials.i7x
+Core Mechanics\Infections.i7x
+Core Mechanics\Lists and Banning.i7x
+Core Mechanics\Sex and Infection Functions.i7x
+Gherod\Wyatt.i7x
+Hellerhound\Shifting.i7x
+Stripes\Dominick.i7x
+Stripes\Hospital.i7x
+Stripes\Latex Mistress.i7x
+Stripes\Leonard Events.i7x
+Wahn\Body Shop.i7x
+Wahn\Nermine.i7x
