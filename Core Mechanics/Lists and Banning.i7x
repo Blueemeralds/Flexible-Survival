@@ -295,7 +295,8 @@ PersonalExcludedForms is {"Anime Babe", "Batcubus", "Bird of Paradise", "Bouncy 
 
 To decide whether (FormName - a text) is personally excluded:
 	repeat with ExcludedForm running through PersonalExcludedForms:
-		if FormName exactly matches the text ExcludedForm, case insensitively, decide yes;
+		if FormName exactly matches the text ExcludedForm, case insensitively:
+			decide yes;
 	decide no.
 
 To decide which list of text is PersonalEncounterPool (Candidates - a list of text):

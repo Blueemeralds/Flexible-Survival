@@ -1,5 +1,11 @@
 # Personal version changelog
 
+## 2026-10-11 — Filter comparison correction (revision 3, retry pending)
+
+- The user's revision-2 compile advanced past the previous conditions and reported one error: `case insensitively, decide yes` was parsed as an unrecognized instruction.
+- Put the case-insensitive comparison and `decide yes` on separate lines in the exclusion predicate. This is the only gameplay edit relative to revision 2; the 71 names and all other extension contents are unchanged.
+- Validation: reproduced the revision-2 error with Linux NI 6M62; corrected helper compiled through NI and Inform 6 v6.33 and passed five dumb-glulxe runtime checks (exact/mixed-case names, unlisted variants, retained duplicate weights, empty filtered pool). Added `verify-filter.py` to repeat those tests against the real helper. Source comparison, 71-name consistency and whitespace checks passed. A separate full-game attempt using stock Linux NI 6M62 (8 GiB address-space limit, default 8 MiB stack) crashed with signal 11 after 233.45 seconds while processing extensions. No complete game was produced; full compilation and scripted-scene checks remain pending.
+
 ## 2026-10-11 — Compile-condition correction (retry pending)
 
 - The user's first exclusion build failed Inform 7 6M62 translation. The screenshot reported unrecognized negative custom conditions and ambiguous combined conditions in Body Shop guarantees and Dominick's forced transformation rules.
